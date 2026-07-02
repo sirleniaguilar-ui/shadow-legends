@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shadow Legends</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Animaciones AOS Nuevo -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Swiper carrusel automático (Se pone ANTES de tu CSS) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Reproductor Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER (Corregido y unificado) -->
+    <header>
+
+        <div class="logo-container">
+
+            <div class="logo">
+                SHADOW LEGENDS
+            </div>
+
+            <lottie-player
+                src="https://assets9.lottiefiles.com/packages/lf20_gxcnsfk2.json"
+                background="transparent"
+                speed="1"
+                style="width:80px;height:80px"
+                loop
+                autoplay>
+            </lottie-player>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#personajes">Personajes</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn">
+            Pre-Ordenar
+        </button>
+
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <h1>SHADOW LEGENDS</h1>
+
+            <h2>RISE OF DARKNESS</h2>
+
+            <p>
+                El futuro de la humanidad depende de ti.
+            </p>
+
+            <div class="buttons">
+                <a href="#trailer" class="btn">
+                    Ver Trailer
+                </a>
+
+                <a href="#contacto" class="btn-secondary">
+                    Explorar
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!-- HISTORIA -->
+    <section id="historia" class="story" data-aos="fade-up">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                LA HISTORIA
+            </h2>
+
+            <p class="story-text">
+
+                Año 2150.
+
+                La inteligencia artificial NEXUS ha tomado el control del planeta,
+                destruyendo gobiernos y convirtiendo las ciudades en zonas de guerra.
+
+                El último grupo de resistencia, conocido como Shadow Legends,
+                deberá infiltrarse en la ciudad central de Neo Terra para recuperar
+                el control de la humanidad.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PERSONAJES -->
+    <section id="personajes" class="characters" data-aos="zoom-in">
+
+        <h2 class="section-title">
+            PERSONAJES
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="images/kai.jpg">
+
+                <h3>KAI</h3>
+
+                <p>
+                    Líder de la resistencia y experto en combate táctico.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="images/nova.jpg">
+
+                <h3>NOVA</h3>
+
+                <p>
+                    Hacker y especialista en inteligencia artificial.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="images/raven.jpg">
+
+                <h3>RAVEN</h3>
+
+                <p>
+                    Francotirador y maestro del sigilo.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!-- GALERIA (Con clase "mySwiper" que usaste) -->
+    <section id="galeria" class="gallery" data-aos="fade-right">
+
+        <h2 class="section-title">
+            GALERÍA DEL JUEGO
+        </h2>
+
+        <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="images/galeria1.jpg" alt="Galería 1">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/galeria2.jpg" alt="Galería 2">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/galeria3.jpg" alt="Galería 3">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/galeria4.jpg" alt="Galería 4">
+                </div>
+
+            </div>
+
+            <!-- Paginación de puntitos abajo -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+</section>
+
+    <!-- TRAILER -->
+    <section id="trailer" class="trailer" data-aos="fade-left">
+
+        <h2 class="section-title">
+            TRAILER OFICIAL
+        </h2>
+
+        <div class="video-container">
+
+            <video
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+                width="100%">
+
+                <source
+                    src="video/trailer.mp4"
+                    type="video/mp4">
+
+            </video>
+
+        </div>
+
+    </section>
+    
+    <!-- FORMULARIO -->
+    <section id="contacto" class="contact" data-aos="flip-up">
+
+        <h2 class="section-title">
+            PRE-REGÍSTRATE
+        </h2>
+
+        <form class="form" onsubmit="return false">
+
+            <input
+                type="text"
+                placeholder="Nombre">
+
+            <input
+                type="email"
+                placeholder="Correo">
+
+            <select>
+
+                <option>
+                    Plataforma favorita
+                </option>
+
+                <option>
+                    PC
+                </option>
+
+                <option>
+                    PlayStation
+                </option>
+
+                <option>
+                    Xbox
+                </option>
+
+            </select>
+
+            <button class="btn">
+                Registrarme
+            </button>
+
+        </form>
+
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <h2>SHADOW LEGENDS</h2>
+
+        <p>
+            El futuro de la humanidad está en tus manos.
+        </p>
+
+        <div class="social">
+
+            <a href="#">Discord</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">TikTok</a>
+
+        </div>
+
+        <p class="copy">
+            © 2026 Shadow Legends. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <!-- 1. Librería Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- 2. Librería AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 3. Inicialización obligatoria de las librerías -->
+    <script>
+        // Inicializar Animaciones AOS
+        AOS.init({
+            duration: 1500
+        });
+
+        // Inicializar Carrusel Swiper Automático (Usa la clase .mySwiper que pusiste en tu HTML)
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!-- 4. Tu script personalizado -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
