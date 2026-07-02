@@ -411,4 +411,81 @@ video{
     object-fit: cover;
     border-radius: 15px;
 }
+/* ==========================================
+   ESTILOS RESPONSIVOS PARA CELULARES (MÓVIL)
+   ========================================== */
+@media (max-width: 768px) {
+    
+    /* 1. HEADER: Pasamos el menú y logo a formato vertical */
+    header {
+        position: relative; /* Evita que flote rompiendo el inicio */
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú hacia abajo */
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    /* 2. HERO: Ajustamos textos grandes para que no se corten */
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px; /* Más pequeño para pantallas chicas */
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .buttons {
+        flex-direction: column; /* Un botón arriba del otro */
+        width: 100%;
+        gap: 10px;
+    }
+
+    .btn, .btn-secondary {
+        width: 100%; /* Botones a lo ancho del celular */
+        text-align: center;
+    }
+
+    /* 3. SECCIONES: Reducimos espacios exagerados */
+    .story, .characters, .gallery, .trailer, .contact {
+        padding: 60px 20px; /* Menos margen en bordes */
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    /* 4. PERSONAJES: Tarjetas se adaptan al ancho del móvil */
+    .cards {
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%; /* Tarjetas toman todo el ancho disponible */
+        max-width: 340px;
+    }
+
+    /* 5. CARRUSEL SWIPER: Reducimos altura de imágenes */
+    .gallery-swiper .swiper-slide img {
+        height: 280px; 
+    }
+}
+
 
